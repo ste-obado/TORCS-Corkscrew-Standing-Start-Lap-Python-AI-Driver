@@ -12,9 +12,9 @@ The task is to drive a car around the Corkscrew track in TORCS from a standing s
  
 ## Environment and setup
  
-- OS: Windows [CHECK: Windows 10 or 11]
+- OS: Windows Windows  11]
 - Python: 3.14 (64-bit), standard library only
-- TORCS and challenge kit: `gym_torcs` kit folder (naoto yoshida, MIT) with TORCS patched with the SCR server plugin (`scr_server` driver, UDP port 3001). [CHECK: TORCS version and where it was installed from]
+- TORCS and challenge kit: `gym_torcs` kit folder (naoto yoshida, MIT) with TORCS patched with the SCR server plugin (`scr_server` driver, UDP port 3001).
   - Race configuration: Race > Quick Race > Configure Race. Track: Corkscrew. Drivers: only `scr_server 1` selected (all other `scr_server` entries removed). Standing start. Default livery. No car model or physics files edited.
 - Required local files: `snakeoil3_v3_2.py` only. It is self-contained and has no config files or assets. `autostart.sh` from the kit is Linux-only and is not used.
 - External dependencies: none. Python 3 and TORCS with the SCR plugin are enough, and there is nothing to install with pip.
@@ -38,17 +38,17 @@ Settings for every run: Corkscrew track, standing start, single car (`scr_server
 | Run | Lap time | Top speed | Notes |
 |-----|----------|-----------|-------|
 | Baseline kit driver (`snakeoil3_gym.py` demo logic) | not timed | not recorded | about 39 km/h on straights in my first version |
-| Submitted driver `snakeoil3_v3_2.py`, run 1 | 1:49 [CHECK exact time] | [CHECK] | clean, no crash |
-| Submitted driver `snakeoil3_v3_2.py`, run 2 | [CHECK exact time] | [CHECK] | clean, no crash |
-| Submitted driver `snakeoil3_v3_2.py`, run 3 | 1:52 [CHECK exact time] | 213 km/h | clean, no crash |
+| Submitted driver `snakeoil3_v3_2.py`, run 1 | 1:49  | 216| clean, no crash |
+| Submitted driver `snakeoil3_v3_2.py`, run 2 | 1:52 | 206 | clean, no crash |
+| Submitted driver `snakeoil3_v3_2.py`, run 3 | 1:52 | 213 km/h | clean, no crash |
  
-Three repeat runs of v5 stayed between 1:49 and 1:52. Damage: [CHECK: damage value or "not recorded"].
+Three repeat runs of v3_2 stayed between 1:49 and 1:52. Damage: no damage .
  
 I chose v5 over a faster version (v6) because v6 was not repeatable: three runs gave 1:43, 2:00 and 2:09.
  
 Corner speeds measured on the v3 lap (9 corners): 59, 69, 75, 82, 70, 52, 86, 76 and 51 km/h.
  
-See `experiment_results.csv` for the full version history and `evidence/` for [CHECK: add the actual evidence paths, for example `evidence/lap_log_v5.txt` and the video file or link].
+See `experiment_results.csv` for the full version history and `evidence/`.
  
 ## Enhancements
  
@@ -73,9 +73,9 @@ What I did myself: ran and timed every lap, pasted the telemetry, decided which 
  
 ## Limitations
  
-- Lap time varies by about 3 seconds between runs (1:49 to 1:52 over three runs), and I tested only three runs of v5.
+- Lap time varies by about 3 seconds between runs (1:49 to 1:52 over three runs), and I tested only three runs of v3_2.
 - Tuned and tested on Corkscrew only. Other tracks were not tested.
-- Sharp corners still run slowly (about 51 to 55 km/h at the floor), and in some experimental versions the car ran off the road at about 2490 m and 2050 m. v5 may still run wide in these corners.
+- Sharp corners still run slowly (about 51 to 55 km/h at the floor), and in some experimental versions the car ran off the road at about 2490 m and 2050 m. v3_2 may still run wide in these corners.
 - v6 reached 1:43 but was inconsistent (2:00 and 2:09 on other runs), so it is not the submitted version.
 - Damage per lap and a baseline lap time for the kit driver were not recorded.
 - Tested on Windows only.
