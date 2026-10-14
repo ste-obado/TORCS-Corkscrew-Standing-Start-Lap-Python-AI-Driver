@@ -7,7 +7,7 @@ v4,wider beams + halved centre pull + floor 55 + faster accel,2:10,216,yes,rejec
 v4 changes reverted,2:02,204,yes,kept
 snakeoil3_v3_2,speed-dependent centre pull (stiffer at low speed),1:52,213,yes,SELECTED: three repeat runs between 1:49 and 1:52
 snakeoil3_v3_3,more aggressive braking/grip settings,1:45,[CHECK],yes,first run; later repeats inconsistent
-snakeoil3_v3_3 repeat 1,snakeoil3_v3_3,1:43,yes,fastest v6 run
+snakeoil3_v3_3 repeat 1,snakeoil3_v3_3,1:43,yes,fastest v3_3 run
 snakeoil3_v3_3 repeat 2,snakeoil3_v3_3,2:00,inconsistent
 snakeoil3_v3_3 repeat 3,snakeoil3_v3_3,2:09,inconsistent: rejected for submission
 snakeoil3_v3_3 variant,extra corner margin 8 + floor 40 + low-speed steering 0.35,crashed,no,rejected: zig-zag and crash at about 2050 m
