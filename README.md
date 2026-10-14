@@ -20,7 +20,7 @@ The task is to drive a car around the Corkscrew track in TORCS from a standing s
 - External dependencies: none. Python 3 and TORCS with the SCR plugin are enough, and there is nothing to install with pip.
 ## Run
  
-From the folder that contains `snakeoil3_v3_3.py` (for example `gym_torcs`), start TORCS by hand:
+From the folder that contains `snakeoil3_v3_2.py` (for example `gym_torcs`), start TORCS by hand:
  
 1. Open TORCS and go to Race > Quick Race > Configure Race. Choose the Corkscrew track and select only `scr_server 1` as the driver, then start the race.
 2. Wait until the TORCS console shows `Waiting for request on port 3001`. The TORCS window looks "Not Responding" while it waits, which is normal.
@@ -44,7 +44,7 @@ Settings for every run: Corkscrew track, standing start, single car (`scr_server
  
 Three repeat runs of v3_2 stayed between 1:49 and 1:52. Damage: no damage .
  
-I chose v5 over a faster version (v6) because v6 was not repeatable: three runs gave 1:43, 2:00 and 2:09.
+I chose v3_2 over a faster version (v3_3) because v6 was not repeatable: three runs gave 1:43, 2:00 and 2:09.
  
 Corner speeds measured on the v3 lap (9 corners): 59, 69, 75, 82, 70, 52, 86, 76 and 51 km/h.
  
@@ -65,7 +65,7 @@ IBM Bob: generated all driver versions from `snakeoil3_v1.py` through `snakeoil3
  
 Claude (Anthropic chat assistant): proposed the code changes described above, explained the TORCS connection problem, and helped read my telemetry logs. It also gave some wrong suggestions that I tested and rejected, for example raising the speed floor and widening the beams (v4).
  
-What I did myself: ran and timed every lap, pasted the telemetry, decided which changes to keep, reverted the ones that made the car slower or unstable, ran repeat laps to compare v5 and v6, and chose v5 as the submission because it was consistent.
+What I did myself: ran and timed every lap, pasted the telemetry, decided which changes to keep, reverted the ones that made the car slower or unstable, ran repeat laps to compare v3.2 and v3.3, and chose v3.2 as the submission because it was consistent.
  
 ## Demonstration
  
@@ -87,7 +87,7 @@ What I did myself: ran and timed every lap, pasted the telemetry, decided which 
 | `gym_torcs` kit, `snakeoil3_gym.py` structure | naoto yoshida (gym-torcs) | MIT |
 | `Client`, `ServerState`, `DriverAction`, `destringify`, `bargraph`, `clip` | Chris X Edwards, snakeoil python client for TORCS | see source header |
 | TORCS simulator and SCR server plugin | Bernhard Wymann et al. and the SCR competition organisers | GPL v2 |
-| `snakeoil3_v5.py` driving logic and tuning constants | Stephen Odero Ochieng, written with help from AI assistants (see above) | MIT, same terms as the kit |
+| `snakeoil3_v3_2.py` driving logic and tuning constants | Stephen Odero Ochieng, written with help from AI assistants (see above) | MIT, same terms as the kit |
  
 The networking and data classes are carried forward from the provided kit with small Python 3 fixes. I do not claim ownership of the provided kit code, only of the driving logic and tuning.
  
