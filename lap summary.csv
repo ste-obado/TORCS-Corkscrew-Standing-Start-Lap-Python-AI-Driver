@@ -10,4 +10,4 @@ snakeoil3_v3_3,more aggressive braking/grip settings,1:45,[CHECK],yes,first run;
 snakeoil3_v3_3 repeat 1,snakeoil3_v3_3,1:43,yes,fastest v6 run
 snakeoil3_v3_3 repeat 2,snakeoil3_v3_3,2:00,inconsistent
 snakeoil3_v3_3 repeat 3,snakeoil3_v3_3,2:09,inconsistent: rejected for submission
-snakeoil3_v3_3 variant,extra corner margin 8 + floor 40 + low-speed steering 0.35,crashed,[CHECK],no,rejected: zig-zag and crash at about 2050 m
+snakeoil3_v3_3 variant,extra corner margin 8 + floor 40 + low-speed steering 0.35,crashed,no,rejected: zig-zag and crash at about 2050 m
