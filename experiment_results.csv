@@ -1,6 +1,0 @@
-version,key_change,observed_top_speed_kmh,corner_speeds_kmh,lap_time_s,notes
-v3,ABS + RPM gears + throttled telemetry,not recorded,not recorded,5min 30sec,baseline
-v3.1,speed-variable centre spring (k_pos) + DOWNSHIFT 5500,not recorded,2min 56sec
-v3.2,STEER_TRACK_EXTRA 0.40->0.50 + DECEL 13->14,213,59/69/75/82/70/52/86/76/51,1min 47sec,submitted version
-v3.3,GRIP 1.10 + DECEL 15 + STEER_DIVISOR 0.4 + BRAKE_GAIN 0.16 + TCS 4.5,2min 00sec,zig-zag on straights
-v3.4,divisor reverted 0.5 + CORNER_MARGIN 15 + TCS 3.0 restored + DECEL 16,2min 09sec ,wheelspin fix at dist ~1943m
